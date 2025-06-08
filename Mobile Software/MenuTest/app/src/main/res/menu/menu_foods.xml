@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item01"
+        android:title="찌개류">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/radio01"
+                    android:checked="true"
+                    android:title="김치찌개" />
+                <item
+                    android:id="@+id/radio02"
+                    android:title="순두부찌개" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item02"
+        android:title="면류">
+        <menu>
+            <group
+                android:checkableBehavior="all"
+                android:visible="false">
+                <item
+                    android:id="@+id/check01"
+                    android:title="짜장면" />
+                <item
+                    android:id="@+id/check02"
+                    android:checkable="false"
+                    android:checked="false"
+                    android:title="파스타" />
+            </group>
+        </menu>
+    </item>
+</menu>
